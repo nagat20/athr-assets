@@ -4,9 +4,9 @@ var B='https://cdn.jsdelivr.net/gh/nagat20/athr-assets@621b31b/';
 function home(){var p=location.pathname.replace(/\/+$/,'');return document.body.classList.contains('index')||/\/rasheedoud$/.test(p)||p===''}
 function run(){
 if(!home()||document.getElementById('athr-hero-js'))return;
-var mob=window.matchMedia('(max-width:767px)').matches,k=mob?'mobile':'desktop';
+var k='desktop';
 var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-var st=document.createElement('style');st.textContent='.s-block--bundle-html-content .athr-hero{display:none}#athr-hero-js .athr-hero__v{object-position:'+(mob?'50% 50%':'30% 50%')+'}#athr-hero-js .athr-hero__v--loop{opacity:0}#athr-hero-js.is-loop .athr-hero__v--loop{opacity:1}#athr-hero-js.is-loop .athr-hero__v--intro{opacity:0}';document.head.appendChild(st);
+var st=document.createElement('style');st.textContent='.s-block--bundle-html-content .athr-hero{display:none}#athr-hero-js .athr-hero__v--loop{opacity:0}#athr-hero-js.is-loop .athr-hero__v--loop{opacity:1}#athr-hero-js.is-loop .athr-hero__v--intro{opacity:0}';document.head.appendChild(st);
 var s=document.createElement('section');s.id='athr-hero-js';s.className='athr-hero';s.setAttribute('aria-label','أثر — من صخور حائل');
 s.innerHTML=
 '<video class="athr-hero__v athr-hero__v--loop" muted loop playsinline preload="auto" poster="'+B+'athr-hero2-poster-'+k+'.jpg"><source src="'+B+'athr-hero2-loop-'+k+'.mp4" type="video/mp4"></video>'+
