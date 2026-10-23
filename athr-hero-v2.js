@@ -1,6 +1,6 @@
 /* athr hero v2 — البخور + العلبة تتفتح (intro مرة واحدة ثم loop) */
 (function(){
-var B='https://cdn.jsdelivr.net/gh/nagat20/athr-assets@621b31b/';
+var B='https://cdn.jsdelivr.net/gh/nagat20/athr-assets@b8ed3d4/';
 function home(){var p=location.pathname.replace(/\/+$/,'');return document.body.classList.contains('index')||/\/rasheedoud$/.test(p)||p===''}
 function run(){
 if(!home()||document.getElementById('athr-hero-js'))return;
